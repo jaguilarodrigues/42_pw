@@ -15,7 +15,6 @@ SRC_DIR =./srcs
 SRCS =	${SRC_DIR}/main.c \
 		${SRC_DIR}/get_stack.c \
 		${SRC_DIR}/ft_atoi.c \
-		${SRC_DIR}/print_stack.c \
 		${SRC_DIR}/ft_calloc.c \
 		${SRC_DIR}/ft_bzero.c \
 		${SRC_DIR}/ft_memset.c \

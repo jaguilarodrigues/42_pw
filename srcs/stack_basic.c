@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   stack_basic.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaqrodri <jaqrodri@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/27 07:59:47 by jaqrodri          #+#    #+#             */
+/*   Updated: 2022/06/27 08:01:05 by jaqrodri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	connect_nodes(t_node *first, t_node *second)
@@ -49,7 +61,6 @@ void	push_node(t_node *pop, t_node **stack)
 	*stack = pop;
 }
 
-
 int	is_ordered(t_node *stack, int len)
 {
 	int		i;
@@ -57,7 +68,7 @@ int	is_ordered(t_node *stack, int len)
 
 	i = 0;
 	current = stack;
-	while (i < len-1)
+	while (i < len - 1)
 	{
 		if (current->number > (current->next)->number)
 		{

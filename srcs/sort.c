@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaqrodri <jaqrodri@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/27 08:06:09 by jaqrodri          #+#    #+#             */
+/*   Updated: 2022/06/27 08:06:21 by jaqrodri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 static void	list_to_int(int *first, int *second, int *third, t_node *stack)
@@ -35,7 +47,6 @@ void	sort_two(t_game *game)
 
 void	sort_stack(t_game *game)
 {
-	
 	if (is_ordered(game->stack_a, game->len_a) == 1)
 		return ;
 	else if (game->len_total == 2)

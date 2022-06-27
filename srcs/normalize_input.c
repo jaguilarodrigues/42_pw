@@ -1,11 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   normalize_input.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaqrodri <jaqrodri@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/27 07:53:41 by jaqrodri          #+#    #+#             */
+/*   Updated: 2022/06/27 07:54:48 by jaqrodri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-int *set_to_array(char **argv, int size)
+int	*set_to_array(char **argv, int size)
 {
-
-	int		i;
-	int		*array;
-
+	int	i;
+	int	*array;
 
 	array = (int *)ft_calloc(sizeof(int), size);
 	i = 0;
@@ -14,8 +24,7 @@ int *set_to_array(char **argv, int size)
 		array[i] = ft_atoi(argv[i + 1]);
 		i++;
 	}
-	
-    return (array);
+	return (array);
 }
 
 int	*normalize_input(char **argv, int size)

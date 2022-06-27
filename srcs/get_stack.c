@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_stack.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaqrodri <jaqrodri@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/27 07:56:34 by jaqrodri          #+#    #+#             */
+/*   Updated: 2022/06/27 07:56:49 by jaqrodri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 int	only_digit(const char *str)
@@ -16,6 +28,7 @@ int	only_digit(const char *str)
 int	validate_input(const char *str)
 {
 	long int	num;
+
 	if (!only_digit(str))
 		return (0);
 	num = ft_atoi(str);

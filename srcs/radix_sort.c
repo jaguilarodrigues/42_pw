@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   radix_sort.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaqrodri <jaqrodri@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/27 07:58:13 by jaqrodri          #+#    #+#             */
+/*   Updated: 2022/06/27 07:58:34 by jaqrodri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 int	get_bit(int largest_number, int i)
@@ -49,5 +61,4 @@ void	radix_sort(t_game *game)
 		return_nodes_to_a(game);
 		i++;
 	}
-
 }

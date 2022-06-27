@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaqrodri <jaqrodri@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/27 07:52:18 by jaqrodri          #+#    #+#             */
+/*   Updated: 2022/06/27 07:53:18 by jaqrodri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
@@ -5,8 +17,8 @@
 # include <stdlib.h>
 # include <stdio.h>
 
-#define INT_MIN  -2147483648
-#define INT_MAX  2147483647
+# define INT_MIN -2147483648
+# define INT_MAX 2147483647
 
 typedef struct s_node
 {
@@ -51,8 +63,5 @@ int			is_ordered(t_node *stack, int len);
 void		swap_a(t_node *n1, t_node *n2);
 void		sort_five(t_game *game);
 void		sort_three(t_game *game);
-
-
-
 
 #endif

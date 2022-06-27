@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pw_operations.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaqrodri <jaqrodri@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/27 07:54:58 by jaqrodri          #+#    #+#             */
+/*   Updated: 2022/06/27 07:56:16 by jaqrodri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	push_a(t_game	*game)
@@ -49,10 +61,10 @@ void	reverse_rotate_a(t_node **stack)
 
 void	swap_a(t_node *n1, t_node *n2)
 {
-	int temp;
+	int	temp;
 
 	temp = n1->number;
-	n1->number = n2->number;;
+	n1->number = n2->number;
 	n2->number = temp;
 	ft_putstr_fd("sa\n", 1);
 }

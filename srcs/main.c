@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaqrodri <jaqrodri@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/27 08:01:48 by jaqrodri          #+#    #+#             */
+/*   Updated: 2022/06/27 08:02:14 by jaqrodri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	start_game(t_game *game, int argc)
@@ -12,7 +24,7 @@ void	start_game(t_game *game, int argc)
 
 t_node	*last_node(t_node *stack)
 {
-	t_node *current;
+	t_node	*current;
 
 	current = stack;
 	while (current->next != NULL)
@@ -54,7 +66,6 @@ int	main(int argc, char *argv[])
 	int		*normalized;
 	t_game	*game;
 
-
 	if (argc <= 2)
 		exit(0);
 	if (check_error(argc, argv) == 0)
@@ -66,12 +77,7 @@ int	main(int argc, char *argv[])
 	start_game(game, argc);
 	normalized = normalize_input(argv, argc - 1);
 	set_stack(game, normalized);
-
-	//print_stack(game->stack_a, game->len_a);
 	sort_stack(game);
-	//print_stack(game->stack_a, game->len_a);
-	//printf("\n");
-	//print_stack(game->stack_b, game->len_b);
 	free(normalized);
 	exit (0);
 }
