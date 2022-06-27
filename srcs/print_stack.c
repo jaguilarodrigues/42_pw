@@ -1,13 +1,17 @@
 #include "push_swap.h"
 
-void	print_stack(t_game *game)
+void	print_stack(t_node *stack, int len)
 {
 	int	i;
+	t_node *current;
 
 	i = 0;
-	while (i <  game->len_a)
+	current = stack;
+	while (i < len)
 	{
-		printf("[%d] %d\n", i, (game->stack_a + i));
+		
+		printf("[%d] %d\n", i, current->number);
+		current = current->next;
 		i++;
 	}
 }

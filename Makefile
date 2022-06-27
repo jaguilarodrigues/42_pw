@@ -16,11 +16,15 @@ SRCS =	${SRC_DIR}/main.c \
 		${SRC_DIR}/get_stack.c \
 		${SRC_DIR}/ft_atoi.c \
 		${SRC_DIR}/print_stack.c \
-		${SRC_DIR}/free_stack.c \
 		${SRC_DIR}/ft_calloc.c \
 		${SRC_DIR}/ft_bzero.c \
 		${SRC_DIR}/ft_memset.c \
+		${SRC_DIR}/ft_putstr_fd.c \
 		${SRC_DIR}/quick_sort.c \
+		${SRC_DIR}/stack_basic.c \
+		${SRC_DIR}/pw_operations.c \
+		${SRC_DIR}/sort.c \
+		${SRC_DIR}/radix_sort.c \
 		${SRC_DIR}/normalize_input.c \
 		${SRC_DIR}/ft_strlen.c
 
