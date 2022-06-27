@@ -48,3 +48,23 @@ void	push_node(t_node *pop, t_node **stack)
 	}
 	*stack = pop;
 }
+
+
+int	is_ordered(t_node *stack, int len)
+{
+	int		i;
+	t_node	*current;
+
+	i = 0;
+	current = stack;
+	while (i < len-1)
+	{
+		if (current->number > (current->next)->number)
+		{
+			return (0);
+		}
+		current = current->next;
+		i++;
+	}
+	return (1);
+}

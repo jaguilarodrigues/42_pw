@@ -27,7 +27,6 @@ typedef struct s_game
 
 size_t		ft_strlen(const char *s);
 int			check_error(int argc, char *argv[]);
-int			error(void);
 long int	ft_atoi(const char *str);
 int			ft_isdigit(int c);
 int			*normalize_input(char **argv, int size);
@@ -47,6 +46,11 @@ t_node		*pop_node(t_node **stack);
 void		push_node(t_node *pop, t_node **stack);
 void		ft_putstr_fd(char *s, int fd);
 void		rotate_a(t_node **stack);
+void		reverse_rotate_a(t_node **stack);
+int			is_ordered(t_node *stack, int len);
+void		swap_a(t_node *n1, t_node *n2);
+void		sort_five(t_game *game);
+void		sort_three(t_game *game);
 
 
 

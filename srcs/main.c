@@ -54,14 +54,16 @@ int	main(int argc, char *argv[])
 	int		*normalized;
 	t_game	*game;
 
-	(void)argv;
-	(void)argc;
+
+	if (argc <= 2)
+		exit(0);
+	if (check_error(argc, argv) == 0)
+	{
+		ft_putstr_fd("Error\n", 1);
+		exit(-1);
+	}
 	game = (t_game *)ft_calloc(sizeof(t_game), 1);
 	start_game(game, argc);
-	if (argc <= 1)
-		exit(error());
-	if (!check_error(argc, argv))
-		exit(error());
 	normalized = normalize_input(argv, argc - 1);
 	set_stack(game, normalized);
 

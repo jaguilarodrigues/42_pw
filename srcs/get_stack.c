@@ -16,7 +16,6 @@ int	only_digit(const char *str)
 int	validate_input(const char *str)
 {
 	long int	num;
-
 	if (!only_digit(str))
 		return (0);
 	num = ft_atoi(str);

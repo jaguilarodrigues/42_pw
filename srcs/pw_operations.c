@@ -34,3 +34,25 @@ void	rotate_a(t_node **stack)
 		ft_putstr_fd("ra\n", 1);
 	}
 }
+
+void	reverse_rotate_a(t_node **stack)
+{
+	t_node	*head;
+
+	head = *stack;
+	if (head == NULL)
+		return ;
+	head = head->previous;
+	*stack = head;
+	ft_putstr_fd("rra\n", 1);
+}
+
+void	swap_a(t_node *n1, t_node *n2)
+{
+	int temp;
+
+	temp = n1->number;
+	n1->number = n2->number;;
+	n2->number = temp;
+	ft_putstr_fd("sa\n", 1);
+}

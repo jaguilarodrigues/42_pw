@@ -25,6 +25,7 @@ SRCS =	${SRC_DIR}/main.c \
 		${SRC_DIR}/pw_operations.c \
 		${SRC_DIR}/sort.c \
 		${SRC_DIR}/radix_sort.c \
+		${SRC_DIR}/sort_five.c \
 		${SRC_DIR}/normalize_input.c \
 		${SRC_DIR}/ft_strlen.c
 
